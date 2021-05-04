@@ -1,0 +1,289 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PLANET PIZZA ORDER FORM</title>
+    <style type="text/css">
+    	body{
+    		font-family: "Monaco", monospace;
+    		text-align: center;
+    		background-image: url("GRABATO_IMAGES_CSAD/fast.png");
+    		background-color: #A09D9D;
+    	}
+    	form{
+    		width: 65%;
+    		margin: auto;
+    		border: 4px solid #b8000a;
+    		background-color: white;
+    		padding: 1em;
+
+    	}
+    	h1, h2, legend, h3{
+    		text-align: center;
+    		 color: #b8000a; 
+    		 font-size: 25px;
+    	}
+    	table.cust{
+    		padding: 1em;
+    		border: 2px solid #A09D9D;
+    		margin: 10px;
+    		background-color: #e8e8e8;
+    	}
+    	.cust td {
+    		width: 30px;
+    		text-align: left;
+    	}
+    	table{
+    		padding: 0.5em;
+    		border: 2px solid #A09D9D;
+    		margin: 20px auto;
+    		background-color: #e8e8e8;
+    		width: 95%;
+    		text-align: left;
+
+    	}
+
+    	td, label{
+    		text-align: left;
+    		color: #b8000a;
+    		font-size: 18px;
+    		line-height: 4px;
+    	}
+    	.order tr{
+    		text-align: left;
+    	}
+    	
+    	td.burg{
+    		text-align: left;
+
+    	}
+    	td p{
+    		text-align: left;
+    		font-size: 18px;
+    		height: 10px;
+    	}
+    	textarea{
+    		resize: none;
+    	}
+    	div{
+    		text-align: center;
+    		margin: auto;
+    		padding: 15px;
+    	}
+    	.btn {
+		  background-color: #b8000a;
+		  color: #e8e8e8;
+		  padding: 12px;
+		  margin: 50px 0;
+		  border: none;
+		  width: 30%;
+		  border-radius: 3px;
+		  cursor: pointer;
+		  font-size: 17px;
+		}
+
+		.btn:hover {
+		  background-color: #A09D9D;
+		  color: #b8000a;
+		}
+
+
+
+    </style>
+
+</head>
+<body>
+    <link rel="stylesheet" type="text/css">
+    <!--GRABATO, JANE ASHLEY-->
+    <!--APRIL 29, 2021-->
+
+    <form action="">
+    	<img src="GRABATO_IMAGES_CSAD/planet1.png"><h1>PLANET PIZZA</h1>
+        <fieldset>
+	        <table class="cust">
+	        	<legend>Customer Information</legend>
+	        	<tr>
+		        	<td><label for="fname">Full Name: </label></td>
+		        	<td><input type="text" id="fname" name="fname" maxlength="40"><br></td>
+		        	<td><label for="add">Complete Address: </label></td>
+		        	<td><input type="text" id="add" name="add" maxlength="50"><br></td>
+		        </tr>
+		        <tr>
+		        	<td><label for="cn">Contact No.</label></td>
+		        	<td><input type="text" id="cn" name="cn"><br></td>
+		        	<td><label for="ea">Email Address: </label></td>
+		        	<td><input type="text" id="ea" name="ea" maxlength="20"><br></td>
+		        </tr>
+		        <tr>
+		        	<td rowspan="1"><label for="desc">Description</label></td>
+		        	<td colspan="3"><textarea rows="5" cols="80" placeholder="How to get to Address? (landmarks, etc.)"></textarea></td>
+		        </tr>
+		    </table>
+        </fieldset>
+        <h2>ORDER FORM</h2>
+        <fieldset>
+        <table class="burger">
+         
+        	<tbody>
+        		<legend><img src="GRABATO_IMAGES_CSAD/bg.png" width="5%">
+	        	Burgers</legend>
+	        	<tr><td colspan="2"><p>Patty:</p></td>
+	        		<td class="burg">
+	        			<input type="radio" id="single" name="patty" value="single" CHECKED>
+	        			<label for="single"  >Single Patty</label>
+	        			<input type="radio" id="double" name="patty" value="double">
+	        			<label for="double">Double Patty</label>
+	        		</td>
+	        	</tr>
+	        	<tr><td colspan="2"><p>Condiments:</p></td>
+	        		<td class="burg">
+	        			<input type="checkbox" id="cheese" name="add" value="cheese"><label for="cheese">With Cheese</label>
+		        		<input type="checkbox" id="coleslaw" name="add" value="coleslaw"><label for="coleslaw">Coleslaw</label><br>
+		        		<input type="checkbox" id="tomato" name="add" value="tomato"><label for="tomato">Tomato</label>
+	             		<input type="checkbox" id="onion" name="add" value="onion"><label for="onion">Onion</label><br>
+	             		<input type="checkbox" id="cucumber" name="add" value="cucumber"><label for="cucumber">Cucumber</label>
+	             		<input type="checkbox" id="bacon" name="add" value="bacon"><label for="bacon">Bacon</label>
+	             	</td>
+	        	</tr>
+	        	<tr><td colspan="2"><p>Choice of Bun:</p></td>
+	        		<td class="burg" >
+	        			<input type="radio" id="white" name="bun" value="white" CHECKED><label for="white">White Bun</label>
+	        			<input type="radio" id="wheat" name="bun" value="wheat"><label for="wheat">Wheat Bun</label></td>
+	        	</tr>
+	        	<tr>
+	        		<td><label for="bqty">Quantity :</label></td>
+	        		<td colspan="2"><input type="text" id="bqty" name="bqty" maxlength="3"></td>
+	        	</tr>
+	        </tbody>
+          
+    	</table>
+    	</fieldset>
+    	<fieldset>
+    	<table class="pasta">
+    		
+    		<tbody>
+    			<legend><img src="GRABATO_IMAGES_CSAD/pasta.png" width="8%">Pasta</legend>
+    			<tr><td>Choice of Sauce:</td>
+    				<td>
+    					<select name="sauce" id="sauce" size="1" style="width: 150px; height: 30px;">
+    						<option value="car">Carbonara</option>
+    						<option value="pes">Pesto</option>
+    						<option value="spa" selected>Spaghetti</option>
+    					</select>
+    				</td>    				
+    			</tr>
+    			<tr><td>Extras:</td>
+    				<td><input type="checkbox" id="pcheese" name="add" value="pcheese"><label for="pcheese">Cheese</label>
+		        	<input type="checkbox" id="psauce" name="add" value="psauce"><label for="psauce">Sauce</label>
+		        	<input type="checkbox" id="pmeat" name="add" value="pmeat"><label for="pmeat">Meat</label>
+		        </td>
+    				
+    			</tr>
+    			<tr><td>Meal Size:</td>
+    				<td>
+    					<select name="size" id="size" size="1" style="width: 150px; height: 30px;">
+    						<option value="solo"selected>Solo</option>
+    						<option value="two">Good for 2</option>
+    						<option value="four">Good for 4</option>
+    						<option value="six">Good for 6</option>
+    						<option value="eight">Good for 8</option>
+    					</select>
+    				</td>    				
+    			</tr>
+    			<tr>
+	        		<td><label for="bqty">Quantity per box:</label></td>
+	        		<td colspan="2"><input type="text" id="pqty" name="fname" maxlength="3"></td>
+	        	</tr>
+
+    		</tbody>
+    		
+    	</table>
+    	</fieldset>
+    	<fieldset>
+    	<table class="Fries">
+    		<tbody>
+    			<legend><img src="GRABATO_IMAGES_CSAD/fries.png" width="10%">Fries</legend>
+    			<tr><td>Size:</td>
+    				<td>
+    					<select name="fsize" id="fsize" size="1" style="width: 150px; height: 30px;">
+    						<option value="r" selected>Regular</option>
+    						<option value="m">Medium</option>
+    						<option value="l" >Large</option>
+    					</select>
+    				</td>    				
+    			</tr>
+    			<tr><td>Flavor:</td>
+    				<td>
+    					<select name="flav" id="flav" size="1" style="width: 150px; height: 30px;">
+    						<option value="original"selected>Original</option>
+    						<option value="cheese">Cheese</option>
+    						<option value="bbq">Barbecue</option>
+    						<option value="sc">Sour cream</option>
+    					</select>
+    				</td>    				
+    			</tr>
+    			<tr>
+	        		<td><label for="fqty">Quantity:</label></td>
+	        		<td colspan="2"><input type="text" id="fqty" name="fqty" maxlength="3"></td>
+	        	</tr>
+
+    		</tbody>
+    	</table>
+    	</fieldset>
+    	<fieldset>
+    	<table class="Drinks">
+    		<tbody>
+    			<legend><img src="GRABATO_IMAGES_CSAD/drink.png" width="10%">Drinks</legend>
+    			<tr><td>Kind of Drink:</td>
+    				<td>
+    					<select name="dsize" id="dsize" size="1" style="width: 150px; height: 30px;">
+    						<option value="coke">Coke</option>
+    						<option value="sp">Spite</option>
+    						<option value="rol">Royal</option>
+    						<option value="Iced" selected>Iced Tea</option>
+    						<option value="Lem" >Lemonade</option>
+    						<option value="oj" >Orange Juice</option>
+    						<option value="pj" >Pineapple Juice</option>
+    						<option value="rb" >Rootbeer</option>
+    					</select>
+    				</td>    				
+    			</tr>
+    			<tr><td>Size:</td>
+    				<td>
+    					<select name="flav" id="flav" size="1" style="width: 150px; height: 30px;">
+    						<option value="reg"selected>Regular</option>
+    						<option value="med">Medium</option>
+    						<option value="lar">Large</option>
+    					</select>
+    				</td>    				
+    			</tr>
+    			<tr>
+	        		<td><label for="dqty">Quantity:</label></td>
+	        		<td colspan="2"><input type="text" id="dqty" name="dqty" maxlength="3"></td>
+	        	</tr>
+
+    		</tbody>
+    	</table>
+   		</fieldset>
+   		<div>
+    	 <label for="op" style="color: #b8000a; text-align: left; font-size: 20px;">How can we further improve our order form?</label>
+		 <textarea rows="5" cols="80" placeholder="Your opinions and suggestions are important to us."></textarea>  
+		 </div>  
+		<div>
+			<h3>FORM OF DELIVERY:</h3>
+			<input type="radio" id="del" name="deli" value="del">
+	        <label for="del" style="color: #b8000a; font-size: 18px;"><img src="GRABATO_IMAGES_CSAD/DEL.png" width="7%"><br>Delivery</label><br>
+	        <input type="radio" id="pick" name="deli" value="pick">
+	        <label for="pick" style="color: #b8000a; font-size: 18px;"><img src="GRABATO_IMAGES_CSAD/PICK.png" width="7%"><br>Pick-Up</label>
+		</div>
+		<div>
+			<input type="submit" value="Submit" class="btn">
+			<input type="reset" value="Clear" class="btn">
+		</div>
+     </form>
+
+
+
+
+</body>
+</html>
